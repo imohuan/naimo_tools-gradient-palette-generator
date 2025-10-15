@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 模式按钮样式 */
+.mode-btn {
+  @apply px-3 py-2 text-sm border border-gray-300 rounded-lg transition-all;
+  @apply hover:border-purple-400 hover:bg-purple-50;
+}
+
+.mode-btn.active {
+  @apply bg-purple-500 text-white border-purple-500;
+}
+
+/* 颜色调节器样式 */
+.color-adjuster {
+  @apply flex items-center gap-3 p-3 bg-gray-50 rounded-lg;
+}
+
+.color-preview {
+  @apply w-12 h-12 rounded-lg shadow-sm border-2 border-white cursor-pointer;
+}
+
+/* 输入框样式 */
+input[type="range"] {
+  @apply accent-purple-500;
+}
+
+input[type="color"] {
+  @apply w-12 h-12 rounded-lg cursor-pointer border-2 border-white shadow-sm;
+}
+
+/* 预设卡片 */
+.preset-card {
+  @apply p-2 rounded-lg cursor-pointer transition-all;
+  @apply hover:shadow-md hover:scale-105;
+}
+
+.preset-gradient {
+  @apply h-16 rounded-lg mb-2;
+}
+
+.preset-name {
+  @apply text-xs text-center text-gray-600;
+}
