@@ -3,10 +3,10 @@
   "id": "gradient-palette-generator",
   "name": "渐变色生成器",
   "version": "1.0.0",
-  "author": "Naimo Tools",
-  "icon": "🎨",
+  "author": "Naimo Team",
+  "icon": "./ico.png",
   "description": "智能渐变色生成器，支持2-10色渐变、HSL/RGB调节、随机生成、多格式导出、预设方案库",
-  "category": "design",
+  "category": "image_video",
   "enabled": true,
   "main": "./index.html",
   "preload": "./preload.js",
@@ -14,20 +14,9 @@
     {
       "path": "gradient",
       "name": "渐变色生成器",
-      "icon": "🎨",
+      "icon": "./ico.png",
       "description": "生成精美的渐变色调色板",
-      "type": "text",
-      "weight": 100,
-      "lifecycleType": "reuse",
-      "singleton": true,
-      "anonymousSearchFields": [
-        "gradient",
-        "渐变",
-        "配色",
-        "调色板",
-        "palette",
-        "color"
-      ]
+      "type": "text"
     }
   ]
 }
